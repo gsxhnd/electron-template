@@ -1,0 +1,15 @@
+[package]
+name = "rlib"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "rlib"
+path = "rlib/lib.rs"
+edition = "2021"
+crate-type = ["dylib"]
+
+[dependencies]
+neon = { git = "https://github.com/neon-bindings/neon.git" }
